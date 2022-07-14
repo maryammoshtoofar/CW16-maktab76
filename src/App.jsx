@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Color from "./components/colors";
 
-
-class App extends Component{
-
+class App extends Component {
   render() {
-    return(
+    return (
       <>
-
+        <Color />
       </>
-    )
+    );
   }
 }
 
