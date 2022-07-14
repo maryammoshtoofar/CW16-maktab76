@@ -39,8 +39,10 @@ class Rgb extends Component {
           </ColorDiv>
           <ColorDiv>
             <Text color="green">GREEN</Text>
-            <Button onClick={() => this.indecrement("g","+")}>+</Button>
-            <Button onClick={() => this.indecrement("g","-")}>-</Button>
+                   
+                   <Button onClick={() => this.indecrement("g","+")}>+</Button>
+                       <Button onClick={() => 
+                       this.indecrement("g","-")}>-</Button>
           </ColorDiv>
           <ColorDiv>
             <Text color="blue">BLUE</Text>
@@ -49,7 +51,7 @@ class Rgb extends Component {
           </ColorDiv>
           
         </div>
-        <Content color={(this.state.r===30 && this.state.g===30 && this.state.b===30) ? '#fff' :'#000'}
+        <Content color={(this.state.r<=112 && this.state.g<=112 && this.state.b<=112) ? '#fff' :'#000'}
           style={{
             backgroundColor: `rgb(${this.state.r}, ${this.state.g},${this.state.b})`,
           }}
