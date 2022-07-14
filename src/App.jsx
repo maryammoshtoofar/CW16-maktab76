@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import Color from "./components/colors";
+import Rgb from './components/rgb'
 
 class App extends Component {
   render() {
     return (
       <>
-        <Color />
+        <Rgb />
+        
       </>
     );
   }
